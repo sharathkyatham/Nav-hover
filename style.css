@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    background: linear-gradient(60deg,red,green,blue);
+    color: rgba(255, 255, 255, 0.99);
+    background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    letter-spacing: 4px;
+}
+
+h1::after {
+    content: "";
+    width: 0px;
+    transition: 0.4s;
+    display: block;
+}
+h1:hover::after {
+    margin-left: 645px;
+    width: 12%;
+    color: black;
+    border: solid 0.5px;
+}
+.nav{
+    display: block;
+    padding: 10px;
+    background-color: grey;
+    color: white;
+    transition-duration: 0.7s;
+    text-align: center;
+    width: 100px;
+    margin-left: 650px;
+}
+.nav:hover{
+    background-color: lightblue;
+    color: blue;
+    cursor: pointer;
+    transform: translateX(20px);
+}
+
